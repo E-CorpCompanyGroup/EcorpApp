@@ -14,13 +14,42 @@ const LOGINPAGE=()=>{
 
     BREAK(),
 
-    INPUT('','email','Enter User Email','');
+    INPUT('','email','Enter User Email','UserEmail');
     
-    INPUT('','password','Enter User Password','');
+    INPUT('','password','Enter User Password','UserPassword');
 
     BUTTON('','Login','','',()=>{
 
-        HOMEPAGE()
+        const EMAIL=document.querySelector('.UserEmail');
+        const PASSWORD=document.querySelector('.UserPassword');
+
+        const LOGINAPI=`/Database/Users.json`;
+
+        CHECK(EMAIL.value,(result)=>{
+            CONDITIONER(result,false,
+            ()=>MESSAGE('','Fill In Your Email',''),
+            ()=> CHECK(PASSWORD.value,(result)=>{
+                CONDITIONER(result,false,
+                    ()=>MESSAGE('','Enter Your Password',''),
+                    ()=>GETPACKAGE(LOGINAPI,'cors',(data)=>{
+                        FINDER(data,'UserEmail',EMAIL.value,(user)=>{
+                            CONDITIONER(user,false,
+                            ()=>MESSAGE('','Wrong User Email',''),
+                            ()=>CONDITIONER(user.UserPassword,PASSWORD.value,
+                                ()=>CHECK(user,(result)=>{
+                                    HOMEPAGE(),STORE('local','Admin',user.UserName)
+                                }),
+                                ()=>MESSAGE('','Wrong User Password','')
+                                )
+                            )
+                        })
+                    })
+
+                )
+
+            })
+            )
+        })
 
     })
     

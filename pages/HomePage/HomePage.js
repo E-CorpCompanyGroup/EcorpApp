@@ -1,3 +1,5 @@
+import { USERACCOUNTPAGE } from "../UserAccountPage/UserAccountPage.js";
+
 const HOMEPAGE=()=>{
 
     CLEAR();
@@ -7,30 +9,23 @@ const HOMEPAGE=()=>{
     STYLED(HomeDiv,'background','transparent');
     STYLED(HomeDiv,'bottom','50px');
 
+    VIEW(HomeDiv,'')
+
+    VIEW(HomeDiv,'')
+
+    VIEW(HomeDiv,'')
+
+    VIEW(HomeDiv,'')
+
     FOOTER('','HomeFooter')
     const HomeFooter=document.querySelector('.HomeFooter');
+    STYLED(HomeFooter,'background','transparent');
     
     ICONS(HomeFooter,WHITESETTINGSICON,'',()=>{});
 
     ICONS(HomeFooter,WHITENOTIFICATIONICON,'',()=>{});
 
-    ICONS(HomeFooter,WHITEUSERICON,'',()=>{});
-
-    VIEW(HomeDiv,'')
-
-    VIEW(HomeDiv,'')
-
-    VIEW(HomeDiv,'')
-
-    VIEW(HomeDiv,'')
-
-    
-
-   
-
-
-
-    
+    ICONS(HomeFooter,WHITEUSERICON,'',()=>{USERACCOUNTPAGE()});
 
 }
 
