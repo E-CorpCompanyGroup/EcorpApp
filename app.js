@@ -1,8 +1,8 @@
-import { LOGINPAGE } from "./pages/LoginPage/LoginPage.js"
+ENVIRONMENT('TEST');
 
-CONNECTION=()=>{
-
-    LOGINPAGE()
-
-}
-
+APPMODE('','','red')
+// Import the module and start the app
+import("./Connection/connection.js").then((module) => {
+    const { CONNECTION } = module;
+    CONNECTION();
+})

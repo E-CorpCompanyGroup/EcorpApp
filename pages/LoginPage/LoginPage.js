@@ -1,6 +1,6 @@
 const LOGINPAGE=()=>{
 
-    alert('')
+    INPUT()
 
 }
 
