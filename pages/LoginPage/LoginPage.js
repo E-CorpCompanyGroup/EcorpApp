@@ -23,7 +23,7 @@ const LOGINPAGE=()=>{
         const EMAIL=document.querySelector('.UserEmail');
         const PASSWORD=document.querySelector('.UserPassword');
 
-        const LOGINAPI=`/Database/Users.json`;
+        const LOGINAPI=`https://e-corpcompanygroup.github.io/EcorpApp/Database/Users.json`;
 
         CHECK(EMAIL.value,(result)=>{
             CONDITIONER(result,false,
