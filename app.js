@@ -1,6 +1,6 @@
 import { LOGINPAGE } from "./pages/LoginPage/LoginPage.js"
 
-const CONNECTION=()=>{
+CONNECTION=()=>{
 
     LOGINPAGE()
 
