@@ -6,4 +6,3 @@ CONNECTION=()=>{
 
 }
 
-CONNECTION();
