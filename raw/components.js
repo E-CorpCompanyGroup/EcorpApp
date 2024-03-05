@@ -855,7 +855,7 @@ const SCROLLVIEW=(ELEMENT,CLASS)=>{
     //STYLES
     STYLED(DIV,'position','absolute');
     STYLED(DIV,'width','100%');
-    STYLED(DIV,'height','100%');
+    STYLED(DIV,'height','auto');
     STYLED(DIV,'background','#00000080')
     STYLED(DIV,'left','0');
     STYLED(DIV,'top','0');

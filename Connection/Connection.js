@@ -1,8 +1,13 @@
+import { HOMEPAGE } from "../pages/HomePage/HomePage.js"
 import { LOGINPAGE } from "../pages/LoginPage/LoginPage.js"
 
 const CONNECTION=()=>{
 
-LOGINPAGE()
+    CONDITION(localStorage.getItem('Admin'),
+    ()=>HOMEPAGE(),
+    ()=>LOGINPAGE()
+    )
+
 
 }
 

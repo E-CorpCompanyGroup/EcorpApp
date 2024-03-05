@@ -1,3 +1,5 @@
+import { HOMEPAGE } from "../HomePage/HomePage.js";
+
 const LOGINPAGE=()=>{
 
     CLEAR();
@@ -5,7 +7,7 @@ const LOGINPAGE=()=>{
     BREAK(),BREAK(),BREAK();
 
     TEXT('','h1','E-corp App','AppName',()=>{
-        ALERTBOX('','E-corp App','Welcome TO E-corp App')
+       
     })
     const AppName=document.querySelector('.AppName');
     STYLED(AppName,'color','#ffffff')
@@ -18,10 +20,12 @@ const LOGINPAGE=()=>{
 
     BUTTON('','Login','','',()=>{
 
+        HOMEPAGE()
+
     })
     
     TEXT('','h3','Forgot Password?Click Here!','Forgot',()=>{
-        alert('')
+        
     })
     const Forgot=document.querySelector('.Forgot');
     STYLED(Forgot,'color','#ffffff')
