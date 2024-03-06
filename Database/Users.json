@@ -3,15 +3,23 @@
         "UserEmail":"erouandrewrichard01@gmail.com",
         "UserPassword":"@December05012",
         "UserName":"Erou Andrew Richard",
-        "Position":"CEO",
-        "Privillage":"Admin"
+        "Position":"Chief Executive Officer",
+        "Privillage":"Admin",
+        "Age":"24years",
+        "Date Of Birth":"05-12-1999",
+        "Tribe":"Itesoti",
+        "CurrentLocation":"Mbale"
     },
     {
         "UserEmail":"nagamiestherruth@gmail.com",
         "UserPassword":"Ruthie123@",
         "UserName":"Nagami Esther Ruth",
-        "Position":"CEO",
-        "Privillage":"Admin"
+        "Position":"Chief Executive Officer",
+        "Privillage":"Admin",
+        "Age":"22years",
+        "Date Of Birth":"27-12-2001",
+        "Tribe":"Gishu",
+        "CurrentLocation":"Mbale"
     }
     
 ]
