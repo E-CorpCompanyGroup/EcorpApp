@@ -1,3 +1,5 @@
+import { NOTIFICATIONSPAGE } from "../NotificationsPage/NotificationsPage.js";
+import { SETTINGSPAGE } from "../SettingsPage/SettingsPage.js";
 import { USERACCOUNTPAGE } from "../UserAccountPage/UserAccountPage.js";
 
 const HOMEPAGE=()=>{
@@ -21,9 +23,9 @@ const HOMEPAGE=()=>{
     const HomeFooter=document.querySelector('.HomeFooter');
     STYLED(HomeFooter,'background','transparent');
     
-    ICONS(HomeFooter,WHITESETTINGSICON,'',()=>{});
+    ICONS(HomeFooter,WHITESETTINGSICON,'',()=>{SETTINGSPAGE()});
 
-    ICONS(HomeFooter,WHITENOTIFICATIONICON,'',()=>{});
+    ICONS(HomeFooter,WHITENOTIFICATIONICON,'',()=>{NOTIFICATIONSPAGE()});
 
     ICONS(HomeFooter,WHITEUSERICON,'',()=>{USERACCOUNTPAGE()});
 

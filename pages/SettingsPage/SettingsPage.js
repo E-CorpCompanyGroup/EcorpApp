@@ -1,6 +1,7 @@
 import { HOMEPAGE } from "../HomePage/HomePage.js";
+import { LOGINPAGE } from "../LoginPage/LoginPage.js";
 
-const USERACCOUNTPAGE=()=>{
+const SETTINGSPAGE=()=>{
 
     CLEAR();
 
@@ -13,7 +14,7 @@ const USERACCOUNTPAGE=()=>{
     STYLED(BackIcon,'marginLeft','0.5rem');
     STYLED(BackIcon,'width','30px');
     
-    TEXT(HomeHeader,'h2','My Profile','UserAccount',()=>{})
+    TEXT(HomeHeader,'h2','Settings ','UserAccount',()=>{})
     const UserAccount=document.querySelector('.UserAccount');
     STYLED(UserAccount,'marginTop','auto');
     STYLED(UserAccount,'marginBottom','auto');
@@ -27,22 +28,11 @@ const USERACCOUNTPAGE=()=>{
     STYLED(HomeDiv,'background','transparent');
     STYLED(HomeDiv,'top','50px');
 
-    VIEW(HomeDiv,'UserName')
-    const UserName=document.querySelector('.UserName');
-    STYLED(UserName,'background','#000000');
-    STYLED(UserName,'height','100px');
+    BUTTON(HomeDiv,'LogOut',WHITELOGOUTICON,'',()=>{REMOVESTORE('local','Admin'),LOGINPAGE()})
 
-    TEXT(UserName,'h3','Welcome','Welcome',()=>{})
-    const Welcome=document.querySelector('.Welcome');
-    STYLED(Welcome,'color','White');
-    STYLED(Welcome,'textAlign','left');
-    STYLED(Welcome,'marginLeft','1rem');
-    STYLED(Welcome,'top','1rem');
-    
-    TEXT(UserName,'h1',`${localStorage.getItem('Admin')}`,'MyName',()=>{})
-    const MyName=document.querySelector('.MyName');
-    STYLED(MyName,'color','White');
+
+
 
 }
 
-export{USERACCOUNTPAGE}
+export{SETTINGSPAGE}

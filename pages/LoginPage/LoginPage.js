@@ -31,7 +31,7 @@ const LOGINPAGE=()=>{
             ()=> CHECK(PASSWORD.value,(result)=>{
                 CONDITIONER(result,false,
                     ()=>MESSAGE('','Enter Your Password',''),
-                    ()=>GETPACKAGE(LOGINAPI,'cors',(data)=>{
+                    ()=>LOADER(),GETPACKAGE(LOGINAPI,'cors',(data)=>{
                         FINDER(data,'UserEmail',EMAIL.value,(user)=>{
                             CONDITIONER(user,false,
                             ()=>MESSAGE('','Wrong User Email',''),
