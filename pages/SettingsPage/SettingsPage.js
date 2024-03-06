@@ -31,6 +31,7 @@ const SETTINGSPAGE=()=>{
     BUTTON(HomeDiv,'LogOut',WHITELOGOUTICON,'',()=>{REMOVESTORE('local','Admin'),LOGINPAGE()})
 
 
+    APPMODEBUTTON(HomeDiv,'teal','#191919')
 
 
 }
