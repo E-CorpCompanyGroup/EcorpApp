@@ -43,7 +43,7 @@ const USERACCOUNTPAGE=()=>{
     const MyName=document.querySelector('.MyName');
     STYLED(MyName,'color','White');
 
-    const USERDATA='/Database/Users.json'
+    const USERDATA='https://e-corpcompanygroup.github.io/EcorpApp/Database/Users.json'
 
     LOADER(HomeDiv,'')
 
